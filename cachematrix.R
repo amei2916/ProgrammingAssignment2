@@ -3,6 +3,7 @@
 ## access without need of re-calculating
 
 ## Creates a special matrix which caches its inverse
+## (based on makeVector example)
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -20,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Cached matrix inversion which checks if the inverse
 ## of a matrix has previously been calculated
+## (based on cachemean example)
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinv() # get cached inverse
